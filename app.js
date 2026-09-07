@@ -7,7 +7,6 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     if ((girilenIsim === "Ateş" && girilenSifre === "123") || 
         (girilenIsim === "Ecem" && girilenSifre === "123")) {
         
-        // Kimin giriş yaptığını tarayıcı hafızasına kaydediyoruz
         localStorage.setItem("aktifKullanici", girilenIsim);
         window.location.href = "panel.html";
     } else {
