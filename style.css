@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap');
+
+body {
+    background-color: #141416;
+    color: #cbd5e1;
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.ana-kutu {
+    background-color: #1e1e22;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #473348;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.resim-kutusu img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    filter: grayscale(40%);
+}
+
+.form-kutusu form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #8899ac;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #141416;
+    border: 1px solid #423348;
+    color: #e2e8f0;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #7b648b;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2e283d;
+    color: #94a3b8;
+    border: 1px solid #574769;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+.panel-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #141416;
+    color: #cbd5e1;
+    font-family: 'Cinzel', serif;
+    overflow-y: auto;
+}
+
+.foto-alani {
+    width: 100%;
+    height: 180px;
+    flex-shrink: 0;
+    background-color: #141416;
+}
+
+.foto-alani img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(40%);
+}
+
+.hafta-container {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.hafta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.gun-kutusu {
+    background-color: #1c1c20;
+    border: 1px solid #2e3440;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.gun-kutusu h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #8899ac;
+    border-bottom: 1px solid #2e3440;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.gorev-ekle-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.gorev-ekle-form input {
+    background-color: #141416;
+    border: 1px solid #2e3440;
+    color: #e2e8f0;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 13px;
+}
+
+.gorev-ekle-form button {
+    background-color: #222a35;
+    color: #8899ac;
+    border: 1px solid #3a4556;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.gorev-ekle-form button:hover {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+.gorev-listesi {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.gorev-listesi li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    background-color: #242429;
+    border: 1px solid #2e3440;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #e2e8f0;
+}
+
+.gorev-sol {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.gorev-sol input[type="checkbox"] {
+    margin-top: 2px;
+    accent-color: #64748b;
+    flex-shrink: 0;
+}
+
+.gorev-sol span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+}
+
+.sil-btn {
+    background-color: #2d1a1d;
+    color: #e2b6b6;
+    border: 1px solid #4a282c;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-family: inherit;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+.sil-btn:hover {
+    background-color: #4a282c;
+    color: #ffffff;
+}
+
+.panel-alt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #141416;
+    border-top: 1px solid #2e3440;
+}
+
+.cikis-btn {
+    background-color: transparent;
+    color: #8899ac;
+    border: 1px solid #3a4556;
+    padding: 12px 50px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cikis-btn:hover {
+    background-color: #222a35;
+    color: #f1f5f9;
+}
+
+@media (max-width: 768px) {
+    .hafta-container {
+        padding: 15px;
+    }
+    
+    .panel-body {
+        height: auto;
+    }
+}
